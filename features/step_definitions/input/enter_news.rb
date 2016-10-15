@@ -15,8 +15,8 @@ Given(/^I'm logged in as a registered administrator$/) do
  end
  
  And(/^I click Enter News link$/) do
+        click_link 'Enter News'
  	expect(page).to have_content('NEWS TO INFORM USERS')
- 	click_link 'Enter News'
  end
  
  When(/^I type specific news and click PUBLISH$/) do
